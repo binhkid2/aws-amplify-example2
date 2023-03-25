@@ -1,30 +1,36 @@
-import { withAuthenticator } from "@aws-amplify/ui-react";
+import { Card, Collection, Heading, View } from "@aws-amplify/ui-react";
+import { API, graphqlOperation } from "aws-amplify";
+import React from "react";
+import { listFeatures } from "../src/graphql/queries";
 
-export function getServerSideProps() {
-  const renderedAt = new Date();
-  const formattedBuildDate = renderedAt.toLocaleDateString("en-US", {
-    dateStyle: "long",
-  });
-  const formattedBuildTime = renderedAt.toLocaleTimeString("en-US", {
-    timeStyle: "long",
-  });
+export async function getStaticProps() {
+  const response = await API.graphql(
+    graphqlOperation(listFeatures, {
+      filter: { released: { eq: true } },
+    })
+  );
+
   return {
     props: {
-      renderedAt: `${formattedBuildDate} at ${formattedBuildTime}`,
+      features: response.data.listFeatures.items,
     },
+    revalidate: 3600 // revalidate every hour
   };
 }
 
-function Home({ signOut, user, renderedAt }) {
+export default function Home({ features = [] }) {
   return (
-    <div style={{ padding: 50 }}>
-      <h1>Logged in as {user.username}.</h1>
-      <div>
-        <button onClick={signOut}>Sign out</button>
-      </div>
-      <p>This page was server-side rendered on {renderedAt}.</p>
-    </div>
+    <View padding="2rem">
+      <Heading level={2}>AmpliCar Roadmap Delivered Features</Heading>
+      <View as="main" padding="2rem">
+        <Collection items={features} type="list" gap="5px" wrap="nowrap">
+          {(feature, index) => (
+            <Card key={index} maxWidth="50rem">
+              <Heading>{feature.title}</Heading>
+            </Card>
+          )}
+        </Collection>
+      </View>
+    </View>
   );
 }
-
-export default withAuthenticator(Home);
