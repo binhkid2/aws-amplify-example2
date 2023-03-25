@@ -18,6 +18,6 @@ Open [http://localhost:3000/admin](http://localhost:3000/admin) with your browse
 
 
 Check out seri step by step in Aws Blog for more details.
-1. [Next.js deployment documentation]([https://nextjs.org/docs/deployment](https://aws.amazon.com/blogs/mobile/deploy-a-next-js-13-app-with-authentication-to-aws-amplify/)) 
-2. [Next.js deployment documentation]([https://nextjs.org/docs/deployment](https://aws.amazon.com/blogs/mobile/deploy-a-next-js-13-app-with-authentication-to-aws-amplify/](https://aws.amazon.com/blogs/mobile/build-a-product-roadmap-with-next-js-and-amplify/))
-3. [Next.js deployment documentation]([https://aws.amazon.com/blogs/mobile/add-storage-to-a-next-js-13-app-with-aws-amplify/)) 
+1. (https://aws.amazon.com/blogs/mobile/deploy-a-next-js-13-app-with-authentication-to-aws-amplify/)
+2. (https://aws.amazon.com/blogs/mobile/build-a-product-roadmap-with-next-js-and-amplify/)
+3. (https://aws.amazon.com/blogs/mobile/add-storage-to-a-next-js-13-app-with-aws-amplify/)
