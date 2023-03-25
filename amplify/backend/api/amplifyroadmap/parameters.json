@@ -1,10 +1,10 @@
 {
-  "AppSyncApiName": "amplifynextjs",
+  "AppSyncApiName": "amplifyroadmap",
   "DynamoDBBillingMode": "PAY_PER_REQUEST",
   "DynamoDBEnableServerSideEncryption": false,
   "AuthCognitoUserPoolId": {
     "Fn::GetAtt": [
-      "authamplifynextjs91718465",
+      "authamplifyroadmapbfd3c50a",
       "Outputs.UserPoolId"
     ]
   }

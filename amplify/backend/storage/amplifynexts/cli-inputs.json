@@ -1,7 +1,7 @@
 {
-  "resourceName": "amplifyTestStorage",
-  "policyUUID": "7324e302",
-  "bucketName": "amplifynextjs48cbfac8294d48e2b7b74727fcc47609",
+  "resourceName": "amplifynexts",
+  "policyUUID": "6f9b3ab0",
+  "bucketName": "amplifyroadmape12f1c59fb5b4ecb9534cab9571b92f8",
   "storageAccess": "auth",
   "guestAccess": [],
   "authAccess": [

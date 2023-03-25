@@ -1,13 +1,13 @@
 {
   "api": {
-    "amplifynextjs": {
+    "amplifyroadmap": {
       "dependsOn": [
         {
           "attributes": [
             "UserPoolId"
           ],
           "category": "auth",
-          "resourceName": "amplifynextjs91718465"
+          "resourceName": "amplifyroadmapbfd3c50a"
         }
       ],
       "output": {
@@ -16,7 +16,7 @@
             {
               "authenticationType": "AMAZON_COGNITO_USER_POOLS",
               "userPoolConfig": {
-                "userPoolId": "authamplifynextjs91718465"
+                "userPoolId": "authamplifyroadmapbfd3c50a"
               }
             }
           ],
@@ -33,7 +33,7 @@
     }
   },
   "auth": {
-    "amplifynextjs91718465": {
+    "amplifyroadmapbfd3c50a": {
       "customAuth": false,
       "dependsOn": [],
       "frontendAuthConfig": {
@@ -59,7 +59,7 @@
     }
   },
   "storage": {
-    "amplifyTestStorage": {
+    "amplifynexts": {
       "dependsOn": [],
       "providerPlugin": "awscloudformation",
       "service": "S3"
