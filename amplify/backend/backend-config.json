@@ -1,13 +1,13 @@
 {
   "api": {
-    "amplifyroadmap": {
+    "todoimage": {
       "dependsOn": [
         {
           "attributes": [
             "UserPoolId"
           ],
           "category": "auth",
-          "resourceName": "amplifyroadmapbfd3c50a"
+          "resourceName": "todoimage60d5a88f"
         }
       ],
       "output": {
@@ -16,7 +16,7 @@
             {
               "authenticationType": "AMAZON_COGNITO_USER_POOLS",
               "userPoolConfig": {
-                "userPoolId": "authamplifyroadmapbfd3c50a"
+                "userPoolId": "authtodoimage60d5a88f"
               }
             }
           ],
@@ -33,7 +33,7 @@
     }
   },
   "auth": {
-    "amplifyroadmapbfd3c50a": {
+    "todoimage60d5a88f": {
       "customAuth": false,
       "dependsOn": [],
       "frontendAuthConfig": {
@@ -59,7 +59,7 @@
     }
   },
   "storage": {
-    "amplifynexts": {
+    "abcdef": {
       "dependsOn": [],
       "providerPlugin": "awscloudformation",
       "service": "S3"

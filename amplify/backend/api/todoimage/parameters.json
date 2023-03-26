@@ -1,10 +1,10 @@
 {
-  "AppSyncApiName": "amplifyroadmap",
+  "AppSyncApiName": "todoimage",
   "DynamoDBBillingMode": "PAY_PER_REQUEST",
   "DynamoDBEnableServerSideEncryption": false,
   "AuthCognitoUserPoolId": {
     "Fn::GetAtt": [
-      "authamplifyroadmapbfd3c50a",
+      "authtodoimage60d5a88f",
       "Outputs.UserPoolId"
     ]
   }

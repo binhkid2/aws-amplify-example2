@@ -1,7 +1,7 @@
 {
   "version": 1,
   "serviceConfiguration": {
-    "apiName": "amplifyroadmap",
+    "apiName": "todoimage",
     "serviceName": "AppSync",
     "defaultAuthType": {
       "mode": "API_KEY",
@@ -10,7 +10,7 @@
     "additionalAuthTypes": [
       {
         "mode": "AMAZON_COGNITO_USER_POOLS",
-        "cognitoUserPoolId": "authamplifyroadmapbfd3c50a"
+        "cognitoUserPoolId": "authtodoimage60d5a88f"
       }
     ]
   }
