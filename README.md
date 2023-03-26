@@ -21,3 +21,18 @@ Check out seri step by step in Aws Blog for more details.
 1. (https://aws.amazon.com/blogs/mobile/deploy-a-next-js-13-app-with-authentication-to-aws-amplify/)
 2. (https://aws.amazon.com/blogs/mobile/build-a-product-roadmap-with-next-js-and-amplify/)
 3. (https://aws.amazon.com/blogs/mobile/add-storage-to-a-next-js-13-app-with-aws-amplify/)
+
+
+We need config aws s3 allow show image or download from s3 buckets
+1. Open aws s3,click to bucket you have created. name something like:  <your-pj>31213-dev
+in permissions tab uncheck Block all public access
+2. Edit Bucket policy and click Policy generator [https://awspolicygen.s3.amazonaws.com/policygen.html]
+Choose : "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "ARN": <your arn>
+press add Statement => generate policy 
+copy that form
+3 Paste to Bucket policy
+
+
