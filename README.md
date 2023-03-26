@@ -30,9 +30,11 @@ in permissions tab uncheck Block all public access
 Choose : "Effect": "Allow",
             "Principal": "*",
             "Action": "s3:GetObject",
+            
             "ARN": <your arn>
+            
 press add Statement => generate policy 
 copy that form
-3 Paste to Bucket policy
+3. Paste to Bucket policy
 
 
